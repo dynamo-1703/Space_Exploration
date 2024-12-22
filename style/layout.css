@@ -75,9 +75,30 @@ body {
 }
 
 .moon{
-    width:200px;
-    height: 200px;
-    border: 2px solid white;
+    width:190px;
+    height: 190px;
+    background: 
+            url(../images/full\ moon.jpg);
+    background-size:auto 100%;
+    border-radius: 30%;
+}
 
+.moon{
+    background: 
+            url(../images/full\ moon.jpg) 0 0;
+    background-size:auto 100%;
+    width: 190px;
+    background-blend-mode: multiply;
+    mask-size: auto 100%;
+    transition:.7s;
+    position: absolute;
+}
+.moon:hover{
+    background: 
+            url(../images/moon-phases-2.jpg) -950px 0;
+    background-size:auto 100%;
+    width: 190px;
+    background-blend-mode: multiply;
+    mask-size: auto 100%;
 }
 
