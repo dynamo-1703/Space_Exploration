@@ -83,3 +83,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayQuotes();
 });
+
+function openPage(pageName, div) {
+    if (!(div instanceof HTMLDivElement)) return;
+    
+    expandDiv(div);
+
+    // for (let menuItem of document.getElementsByClassName("menu-item")) {
+    //     if (menuItem != div) contractDiv(menuItem)
+    // }
+}
+
+function expandDiv(div) {    
+    if (!(div instanceof HTMLDivElement)) return;
+
+    div.classList.add("open-page")
+
+    document.getElementById("main").classList.add("hidden")
+
+    div.children[0].classList.add("active-back")
+    div.children[1].classList.add("hidden")
+    div.children[2].classList.add("active-main")
+}
+
+function contractDiv(div, position) {
+    setTimeout(() => {
+        parent = div.parentElement
+        console.log(parent.classList)
+        parent.classList.remove("open-page")
+        
+        document.getElementById("main").classList.remove("hidden")
+        
+        parent.children[0].classList.remove("active-back")
+        parent.children[1].classList.remove("hidden")
+        parent.children[2].classList.remove("active-main")
+    }, 100)
+    
+}
