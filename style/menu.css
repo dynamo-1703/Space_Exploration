@@ -1,0 +1,132 @@
+#menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.open-page {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0% !important;
+    z-index: 1 !important;
+    padding: 0px !important;
+}
+
+.hidden {
+    opacity: 0;
+    transition-delay: 0s !important;
+}
+
+.menu-item {
+    height: 75px;
+    width: 75px;
+    border: white solid;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    /* text-align: center;
+    align-content: center; */
+    z-index: 0;
+
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu-item > .section-title {
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    
+    transition: all 0.5s;
+    transition-delay: 1s;
+
+    padding: 30px;
+}
+
+.menu-item > div.back {
+    position: inherit;
+    text-align: center;
+    top: inherit;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    border-radius: inherit;
+    width: 0px;
+    height: 0px;
+    background-image: url("../images/images.png");
+    background-size: contain;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.active-back {
+    margin: 20px;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+.menu-item > main {
+    width: auto;
+    height: auto; 
+    margin: 0px 80px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-delay: 0s;
+    
+    display: block;
+}
+
+.active-main {
+    opacity: 1 !important;
+    z-index: 1 !important;
+    transition-delay: 1s !important;
+}
+
+
+.menu-item:nth-child(1) {
+    top: 0;
+    left: 0;
+    padding: 20px 50px 50px 20px;
+    border-width: 0px 1px 1px 0px;
+    border-radius: 0px 0px 150px 0px;
+    border-color: white;
+}
+
+.menu-item:nth-child(2) {
+    top: 0;
+    right: 0;
+    padding: 20px 20px 50px 50px;
+    border-width: 0px 0px 1px 1px;
+    border-radius: 0px 0px 0px 150px;
+    border-color: white;
+}
+
+.menu-item:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    padding: 60px 30px 30px 60px;
+    border-width: 1px 0px 0px 1px;
+    border-radius: 150px 0px 0px 0px;
+    border-color: white;
+}
+
+
+.menu-item:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    padding: 50px 50px 20px 20px;
+    border-width: 1px 1px 0px 0px;
+    border-radius: 0px 150px 0px 0px;
+    border-color: white;
+}
+
+.section-title{
+    font-size: 20px;
+    font-family: "Exo 2", serif;
+}

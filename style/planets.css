@@ -1,0 +1,60 @@
+.banner{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    gap: 1px;  
+}
+
+
+
+.img{
+    height: 450px;
+    width: 250px;
+    transition: 1.25s cubic-bezier(0.1,0.7,0,1);
+    filter: grayscale(1) brightness(0.5);
+    background-repeat: no-repeat;  background-position: center;background-size: cover; }
+.img:hover{
+    transform: translateZ(50px);
+    filter: inherit;
+}
+
+.img:hover + * {
+    transform: translateZ(30px) rotateY(35deg);
+}
+
+.img:has(+  :hover){
+    transform: translateZ(30px) rotateY(-30deg);
+}
+
+.img.clicked {
+    height: 150%; 
+    width: 200%;  /* Doubles the width */
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+.info {
+    font-size: 14px;
+    width: 90%;
+    height: 90%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none; /* Initially hidden */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.info::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+}
