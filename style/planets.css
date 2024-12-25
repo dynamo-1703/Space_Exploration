@@ -1,7 +1,4 @@
 .banner{
-    position: absolute;
-    top: 150px;
-    left: 250px;
     height: 400px;
     width: 1000px;
     display: flex;
@@ -11,7 +8,12 @@
     gap: 1px;  
 }
 
-
+#planets>main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 .img{
     height: 450px;
@@ -52,6 +54,7 @@
     display: none; /* Initially hidden */
     overflow-x: hidden;
     overflow-y: scroll;
+    text-align: justify;
 }
 
 .info::-webkit-scrollbar{
