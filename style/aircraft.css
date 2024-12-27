@@ -1,0 +1,105 @@
+#aircrafts > main {
+    height: 95vh;
+    width: 95vw;
+}
+
+.aircrafts-title{
+    font-size: 75px;
+    height: 80px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    animation:  text-change .7s infinite;
+}
+
+.aircraftinfo{
+    position: absolute; /* Enable precise positioning */
+    top: 50%; /* Move to the vertical center */
+    left: 50%; /* Move to the horizontal center */
+    transform: translate(-50%, -49%); /* Align center precisely */
+    height: 95vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+@keyframes text-change {
+    0% { font-family: Arial, sans-serif; }
+    20% { font-family: Georgia, serif; }
+    40% { font-family: 'Times New Roman', serif; }
+    60% { font-family: Verdana, sans-serif; }
+    80% { font-family: 'Courier New', monospace; }
+    100% { font-family: Arial, sans-serif; }
+}
+
+/* Targeting scrollable main sections */
+.aircraftinfo::-webkit-scrollbar {
+    width: 10px;
+}
+
+.aircraftinfo::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff7f50, #000000);
+    border-radius: 6px;
+}
+
+.aircraftinfo::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 6px;
+    width: 12px;
+}
+
+.voyegar1-img{
+    background: url(../images/voyegar-1.png);
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover; 
+    animation: sample-2 both;
+    animation-timeline: view(40% 0%);
+}
+
+.voyegar-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.voyegar1-title{
+    font-size: 75px;
+    animation: sample both;
+    animation-timeline: view(50% 30%);
+    
+}
+
+@keyframes sample{
+    from{
+        transform: translate(-150%, -49%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes sample-2{
+    from{
+        transform: translate(170%, -88%);
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate(0,0);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
