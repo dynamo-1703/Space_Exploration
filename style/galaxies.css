@@ -1,0 +1,66 @@
+#galaxies {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#galaxies>main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #fff; */
+    width: calc(100%-332px);
+    height: 100%;
+}
+
+#galaxy-info {
+    width: 100%;
+}
+
+.galaxy-info {
+    width: 100%;
+    height: 50%;
+    text-align: justify;
+    display: none;
+    flex-direction: row;
+}
+
+.galaxy-info > div {
+    width: 70%;
+}
+
+.galaxy-info > img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 50px;
+}
+
+.show {
+    display: flex !important;
+}
+
+#galaxy-selector {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 30%;
+
+    overflow-x: scroll;
+}
+
+.galaxy-selector-div {
+    min-width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 25px;
+
+    background-size: contain;
+
+    color: black;
+}

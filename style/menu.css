@@ -70,12 +70,12 @@
 }
 
 .menu-item > main {
-    width: auto;
+    width: calc(100% - 332px);
     height: auto; 
     margin: 0px 80px;
     opacity: 0;
-    transition: opacity 0.5s;
-    transition-delay: 0s;
+    transition: opacity 0.5s, z-index 0.5s;
+    z-index: -1;
     
     display: block;
 }
