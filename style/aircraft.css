@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     animation:  text-change .7s infinite;
+    margin-bottom: 60px;
 }
 
 .aircraftinfo{

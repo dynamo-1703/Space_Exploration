@@ -8,6 +8,11 @@ body {
     align-items: center;
     position: relative;
     background-color: #000; /* Black background for contrast */
+    line-height: 1.6;
+}
+
+p {
+    text-indent: 10px;
 }
 
 #stars {
@@ -42,10 +47,11 @@ body {
 .title{
     height: 110px;
     display: flex;
-    width: 350px;
+    width: 375px;
     top: 70px;
     font-size: 45px;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
     position: absolute;
